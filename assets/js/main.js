@@ -36,10 +36,6 @@ function loadPokemonItens(offset, limit) {
     .catch((error) => console.log(error));
 }
 
-function addCloseModalFunctionToElement(element) {
-
-}
-
 function addEventListenerToButton(pokemon) {
     const button = document.querySelector(`.pokemonButton${pokemon.number}`);
 
