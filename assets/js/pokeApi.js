@@ -11,6 +11,9 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.types = types;
     pokemon.mainType = type;
     pokemon.photo = pokeDetail.sprites.front_default;
+    pokemon.abilities = pokeDetail.abilities.map((abilitySlot) => {
+        return abilitySlot.ability.name;
+    })
     return pokemon;
 }
 
